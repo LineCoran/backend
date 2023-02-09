@@ -9,8 +9,10 @@ const app = express();
 const start = async ()  => {
   try {
     app.listen(PORT, async () => {
-      await sequelize.authenticate()
-      await sequelize.sync()
+      console.log(`start connection to DataBase ...`)
+      await sequelize.authenticate();
+      await sequelize.sync();
+      console.log(`Succes!`)
       console.log(`server was started on ${PORT}`);
     }
     );
