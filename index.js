@@ -17,7 +17,7 @@ const start = ()  => {
 }
 
 app.use('/', (res, req) => {
-  res.send('welcome to server start page');
+  req.send('welcome to server start page');
 })
 
 start();
