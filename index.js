@@ -1,7 +1,7 @@
 const express = require('express');
 
 
-const PORT = 'https://backend-production-37e4.up.railway.app';
+const PORT = process.env.PORT || 5001;
 
 const app = express();
 
